@@ -1,0 +1,21 @@
+# Source and tests are not needed in the published package
+# (dist/ and src/ are included via the "files" field in package.json)
+test/
+coverage/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Config files
+.github/
+.husky/
+tsconfig.json
+yarn.lock
+package-lock.json
+.eslintrc*
+.prettierrc*
+
+# Misc
+.DS_Store
+*.log

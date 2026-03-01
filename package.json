@@ -1,14 +1,17 @@
 {
-  "version": "0.1.0",
+  "name": "react-hook-filters",
+  "version": "1.0.0",
+  "description": "Headless React hook for managing filter state in dashboards and tables, with optional URL sync",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "module": "dist/react-hook-filters.esm.js",
   "files": [
     "dist",
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -33,7 +36,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-hook-filters",
   "author": {
     "name": "Basem Elsisy",
     "email": "basemsisy@gmail.com"
@@ -47,9 +49,12 @@
     "react",
     "hooks",
     "filters",
-    "forms"
+    "table",
+    "dashboard",
+    "url-sync",
+    "search-params",
+    "headless"
   ],
-  "module": "dist/react-hook-filters.esm.js",
   "size-limit": [
     {
       "path": "dist/react-hook-filters.cjs.production.min.js",
@@ -62,18 +67,19 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.10.2",
+    "@testing-library/react-hooks": "^8.0.1",
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
     "husky": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
     "size-limit": "^4.10.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "history": "^5.0.0",
-    "query-string": "^7.0.0"
+    "history": "^5.0.0"
   }
 }
